@@ -4,13 +4,13 @@ Skeleton code to develop and test a JEB back-end plugin.
 
 ## Requirements
 
-- *JEB Pro* or *JEB Android* version 3.1.1 or above.
+- A JEB license that supports back-end plugins (e.g. *JEB Pro* or *JEB Android*) version 3.1.1 or above.
 - [Eclipse IDE](https://www.eclipse.org/downloads/packages/release/2018-12/r/eclipse-ide-java-developers)
 
 ## Getting Started
 
 - Create a plugin folder and copy this repository: `git init MyPlugin && cd MyPlugin && git pull https://github.com/pnfsoftware/jeb-template-plugin`
-- Define a JEB_HOME environment variable to your JEB installation folder
+- Define a JEB_HOME environment variable and initialize it to your JEB installation folder
 - Run the create-eclipse-project script: it will create an Eclipse project, set up jeb.jar dependency and javadoc for in-IDE documentation and auto-completion
 - Import the project into Eclipse (menu File, Import, Existing Projects into the Workspace, ...)
 - Start implementing your plugin (entry-point class: SamplePlugin) and your Tester's testPlugin() method
@@ -23,7 +23,7 @@ Skeleton code to develop and test a JEB back-end plugin.
 
 ## Tutorials
 
-- [How to write an IR optimizer plugin for JEB's native decompilation pipeline](https://www.pnfsoftware.com/blog/jeb-native-pipeline-intermediate-representation/)
+- [How to write an IR optimizer plugin for JEB's native decompilation pipeline](https://www.pnfsoftware.com/blog/jeb-native-pipeline-ir-optimizers-part-2/)
 
 ## Reference
 
