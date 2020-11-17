@@ -22,6 +22,7 @@ import com.pnfsoftware.jeb.core.units.IUnit;
 import com.pnfsoftware.jeb.core.units.UnitUtil;
 import com.pnfsoftware.jeb.core.units.code.EntryPointDescription;
 import com.pnfsoftware.jeb.core.units.code.asm.decompiler.INativeDecompilerUnit;
+import com.pnfsoftware.jeb.core.units.code.asm.decompiler.INativeSourceUnit;
 import com.pnfsoftware.jeb.core.units.code.asm.decompiler.ast.ICMethod;
 import com.pnfsoftware.jeb.core.util.DecompilerHelper;
 import com.pnfsoftware.jeb.util.logging.GlobalLog;
@@ -168,7 +169,7 @@ public class CEmulatorPlugin extends AbstractEnginesPlugin {
 
         // decompile, if needed
         String decompUnitId = Strings.ff("%x", methodAddress);
-        return (ICMethod)decomp.decompile(decompUnitId).getASTItem();
+        return (ICMethod)((INativeSourceUnit)decomp.decompile(decompUnitId)).getASTItem();
     }
 
     @Override
