@@ -1,30 +1,31 @@
-# JEB Back-End Plugin Template
+# JEB C Emulator
 
-Skeleton code to develop and test a JEB back-end plugin.
+Plugin to emulate JEB's decompiled C code:
 
-## Requirements
+- It was originally built to analyze an heavily obfuscated crackme executable dubbed MarsAnalytica (see companion blog [FIXME URL])
 
-- A JEB license that supports back-end plugins (e.g. *JEB Pro* or *JEB Android*) version 3.1.1 or above.
-- [Eclipse IDE](https://www.eclipse.org/downloads/packages/release/2018-12/r/eclipse-ide-java-developers)
+- Emulator has some strong limitations and should serve primarily as an example of what is doable with JEB decompiled C code (see SimpleCEmulator.java for known limitations)
 
-## Getting Started
+- Emulator can be extended by adding specific logic in a class inheriting from SimpleCEmulator (see for example MarsAnalyticaCEmulator.java)
 
-- Create a plugin folder and copy this repository: `git init MyPlugin && cd MyPlugin && git pull https://github.com/pnfsoftware/jeb-template-plugin`
-- Define a JEB_HOME environment variable and initialize it to your JEB installation folder
-- Run the create-eclipse-project script: it will create an Eclipse project, set up jeb.jar dependency and javadoc for in-IDE documentation and auto-completion
-- Import the project into Eclipse (menu File, Import, Existing Projects into the Workspace, ...)
-- Start implementing your plugin (entry-point class: SamplePlugin) and your Tester's testPlugin() method
+- /data repository contains an extract of MArsAnalytica's stack machine trace, and python scripts to replay it with symbols rather than concrete input, and to solve it using Z3
 
-## Deploying
+## Running it
 
-- Adjust your plugin name and version in build.cmd/build.sh
-- Execute the build script (Ant is required)
-- Copy the resulting Jar from the out/ folder to your JEB's coreplugins/ folder
+### JEB's UI
 
-## Tutorials
+- You need JEB version 4.0 or above
+- Copy emulator Jar from the out/ folder to your JEB's coreplugins/ folder
+- In JEB UI, File > Plugins > Execute an Engines Plugin > CEmulator
 
-- [How to write an IR optimizer plugin for JEB's native decompilation pipeline](https://www.pnfsoftware.com/blog/jeb-native-pipeline-ir-optimizers-part-2/)
+### CLI
 
-## Reference
+- The plugin comes with a headless client, made to gather long emulator runs, with the ability to provide heap/stack memory dumps as starting point; see HeadlessClient.java for possible arguments
+
+- To run headless client: java -cp CEmulatorPlugin-1.0.0.jar;[JEB INSTALL FOLDER]\bin\app\jeb.jar;. com.pnf.plugin.cemulator.HeadlessClient [ARGUMENTS]
+
+## References 
+
+- [MA BLOG]
 
 - [API Documentation](https://www.pnfsoftware.com/jeb/apidoc/reference/packages.html)

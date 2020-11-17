@@ -1,2 +1,2 @@
 @echo off
-ant -f scripts\build.xml -DpluginClassname=SamplePlugin -DpluginFilename=SamplePlugin -DpluginVersion=1.0.0
+ant -f scripts\build.xml -DpluginClassname=com.pnf.plugin.cemulator.CEmulatorPlugin -DpluginFilename=CEmulatorPlugin -DpluginVersion=1.0.0

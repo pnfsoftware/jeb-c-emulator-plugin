@@ -1,0 +1,1154 @@
+; MarsAnalytica stack machine trace
+; inital series of SET operators with concrete values are commented, 
+; as they are replaced by symbols in symbolic executor
+; S: SET index:7 value:97
+; S: SET index:8 value:98
+; S: SET index:13 value:99
+; S: SET index:15 value:100
+; S: SET index:16 value:101
+; S: SET index:26 value:102
+; S: SET index:27 value:103
+; S: SET index:22 value:104
+; S: SET index:21 value:105
+; S: SET index:4 value:106
+; S: SET index:18 value:107
+; S: SET index:28 value:108
+; S: SET index:23 value:109
+; S: SET index:29 value:110
+; S: SET index:9 value:111
+; S: SET index:1 value:112
+; S: SET index:25 value:113
+; S: SET index:30 value:114
+; S: SET index:17 value:115
+S: PUSH 0
+S: PUSH 0
+S: POP (0)
+S: SET index:31 value:0
+S: PUSH 1
+S: POP (1)
+S: SET index:31 value:1
+S: PUSH 0
+S: POP (0)
+S: SET index:31 value:0
+S: PUSH 1
+S: POP (1)
+S: SET index:31 value:1
+S: PUSH 0
+S: PUSH 2700
+S: POP (2700)
+S: SET index:32 value:2700
+S: GET index:32
+S: PUSH 2700
+S: PUSH 2
+S: POP (2)
+S: POP (2700)
+S: PUSH 2702
+  | operation: (+,#op=2)
+S: POP (2702)
+S: SET index:32 value:2702
+S: PUSH 0
+S: POP (0)
+S: SET index:31 value:0
+S: PUSH 1
+S: POP (1)
+S: SET index:31 value:1
+S: PUSH 0
+S: POP (0)
+S: SET index:31 value:0
+S: PUSH 1
+S: POP (1)
+S: SET index:31 value:1
+S: PUSH 0
+S: PUSH 2700
+S: POP (2700)
+S: SET index:33 value:2700
+S: GET index:33
+S: PUSH 2700
+S: PUSH 2
+S: POP (2)
+S: POP (2700)
+S: PUSH 2702
+  | operation: (+,#op=2)
+S: POP (2702)
+S: SET index:33 value:2702
+S: PUSH 0
+S: POP (0)
+S: SET index:31 value:0
+S: PUSH 1
+S: POP (1)
+S: SET index:31 value:1
+S: PUSH 0
+S: POP (0)
+S: SET index:31 value:0
+S: PUSH 1
+S: POP (1)
+S: SET index:31 value:1
+S: PUSH 0
+S: POP (0)
+S: SET index:31 value:0
+S: PUSH 1
+S: POP (1)
+S: SET index:31 value:1
+S: GET index:33
+S: PUSH 2702
+S: GET index:32
+S: PUSH 2702
+S: POP (2702)
+S: POP (2702)
+S: TEST (==,#op=2)
+S: PUSH 0
+S: POP (0)
+S: TEST (!,#op=1)
+S: PUSH 0
+S: POP (0)
+S: SET index:31 value:0
+S: PUSH 1
+S: POP (1)
+S: SET index:31 value:1
+S: PUSH 0
+S: POP (0)
+S: SET index:31 value:0
+S: PUSH 32
+S: GET index:7
+S: PUSH 97
+S: POP (97)
+S: POP (32)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: GET index:7
+S: PUSH 97
+S: PUSH 127
+S: POP (127)
+S: POP (97)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: PUSH 32
+S: GET index:8
+S: PUSH 98
+S: POP (98)
+S: POP (32)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: GET index:8
+S: PUSH 98
+S: PUSH 127
+S: POP (127)
+S: POP (98)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: PUSH 32
+S: GET index:13
+S: PUSH 99
+S: POP (99)
+S: POP (32)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: GET index:13
+S: PUSH 99
+S: PUSH 127
+S: POP (127)
+S: POP (99)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: PUSH 32
+S: GET index:15
+S: PUSH 100
+S: POP (100)
+S: POP (32)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: GET index:15
+S: PUSH 100
+S: PUSH 127
+S: POP (127)
+S: POP (100)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: PUSH 32
+S: GET index:16
+S: PUSH 101
+S: POP (101)
+S: POP (32)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: GET index:16
+S: PUSH 101
+S: PUSH 127
+S: POP (127)
+S: POP (101)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: PUSH 32
+S: GET index:26
+S: PUSH 102
+S: POP (102)
+S: POP (32)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: GET index:26
+S: PUSH 102
+S: PUSH 127
+S: POP (127)
+S: POP (102)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: PUSH 32
+S: GET index:27
+S: PUSH 103
+S: POP (103)
+S: POP (32)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: GET index:27
+S: PUSH 103
+S: PUSH 127
+S: POP (127)
+S: POP (103)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: PUSH 32
+S: GET index:22
+S: PUSH 104
+S: POP (104)
+S: POP (32)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: GET index:22
+S: PUSH 104
+S: PUSH 127
+S: POP (127)
+S: POP (104)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: PUSH 32
+S: GET index:21
+S: PUSH 105
+S: POP (105)
+S: POP (32)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: GET index:21
+S: PUSH 105
+S: PUSH 127
+S: POP (127)
+S: POP (105)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: PUSH 32
+S: GET index:4
+S: PUSH 106
+S: POP (106)
+S: POP (32)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: GET index:4
+S: PUSH 106
+S: PUSH 127
+S: POP (127)
+S: POP (106)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: PUSH 32
+S: GET index:18
+S: PUSH 107
+S: POP (107)
+S: POP (32)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: GET index:18
+S: PUSH 107
+S: PUSH 127
+S: POP (127)
+S: POP (107)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: PUSH 32
+S: GET index:28
+S: PUSH 108
+S: POP (108)
+S: POP (32)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: GET index:28
+S: PUSH 108
+S: PUSH 127
+S: POP (127)
+S: POP (108)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: PUSH 32
+S: GET index:23
+S: PUSH 109
+S: POP (109)
+S: POP (32)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: GET index:23
+S: PUSH 109
+S: PUSH 127
+S: POP (127)
+S: POP (109)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: PUSH 32
+S: GET index:29
+S: PUSH 110
+S: POP (110)
+S: POP (32)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: GET index:29
+S: PUSH 110
+S: PUSH 127
+S: POP (127)
+S: POP (110)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: PUSH 32
+S: GET index:9
+S: PUSH 111
+S: POP (111)
+S: POP (32)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: GET index:9
+S: PUSH 111
+S: PUSH 127
+S: POP (127)
+S: POP (111)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: PUSH 32
+S: GET index:1
+S: PUSH 112
+S: POP (112)
+S: POP (32)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: GET index:1
+S: PUSH 112
+S: PUSH 127
+S: POP (127)
+S: POP (112)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: PUSH 32
+S: GET index:25
+S: PUSH 113
+S: POP (113)
+S: POP (32)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: GET index:25
+S: PUSH 113
+S: PUSH 127
+S: POP (127)
+S: POP (113)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: PUSH 32
+S: GET index:30
+S: PUSH 114
+S: POP (114)
+S: POP (32)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: GET index:30
+S: PUSH 114
+S: PUSH 127
+S: POP (127)
+S: POP (114)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: PUSH 32
+S: GET index:17
+S: PUSH 115
+S: POP (115)
+S: POP (32)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: GET index:17
+S: PUSH 115
+S: PUSH 127
+S: POP (127)
+S: POP (115)
+S: TEST (>,#op=2)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (==,cte=1)
+S: POP (1)
+S: TEST (==,cte=1)
+S: PUSH 1
+S: POP (1)
+S: TEST (,#op=1)
+S: PUSH 13
+S: PUSH 124
+S: POP (124)
+S: POP (13)
+S: PUSH 137
+  | operation: (+,#op=2)
+S: PUSH 99
+S: SWAP
+S: POP (137)
+S: POP (99)
+S: PUSH 38
+  | operation: (-,#op=2)
+S: PUSH 33
+S: SWAP
+S: POP (38)
+S: POP (33)
+S: PUSH 7
+  | operation: (^,#op=2)
+S: PUSH 7
+S: POP (7)
+S: POP (7)
+S: TEST (==,#op=2)
+S: PUSH 1
+S: POP (1)
+S: TEST (,#op=1)
+S: PUSH 1
+S: POP (1)
+S: SET index:31 value:1
+S: GET index:9
+S: PUSH 111
+S: GET index:27
+S: PUSH 103
+S: POP (103)
+S: POP (111)
+S: PUSH 11433
+  | operation: (*,#op=2)
+S: GET index:23
+S: PUSH 109
+S: GET index:18
+S: PUSH 107
+S: SWAP
+S: POP (109)
+S: POP (107)
+S: PUSH 2
+  | operation: (-,#op=2)
+S: GET index:29
+S: PUSH 110
+S: SWAP
+S: POP (2)
+S: POP (110)
+S: PUSH 108
+  | operation: (^,#op=2)
+S: POP (108)
+S: POP (11433)
+S: PUSH 1234764
+  | operation: (*,#op=2)
+S: PUSH 16335
+S: POP (16335)
+S: POP (1234764)
+S: TEST (!=,#op=2)
+S: PUSH 0
+S: GET index:17
+S: PUSH 115
+S: GET index:8
+S: PUSH 98
+S: SWAP
+S: POP (115)
+S: POP (98)
+S: PUSH 17
+  | operation: (^,#op=2)
+S: GET index:1
+S: PUSH 112
+S: GET index:22
+S: PUSH 104
+S: SWAP
+S: POP (112)
+S: POP (104)
+S: PUSH 8
+  | operation: (-,#op=2)
+S: SWAP
+S: POP (17)
+S: POP (8)
+S: PUSH 25
+  | operation: (^,#op=2)
+S: PUSH 83
+S: POP (83)
+S: POP (25)
+S: TEST (!=,#op=2)
+S: PUSH 0
+S: GET index:30
+S: PUSH 114
+S: GET index:25
+S: PUSH 113
+S: SWAP
+S: POP (114)
+S: POP (113)
+S: PUSH 1
+  | operation: (-,#op=2)
+S: GET index:26
+S: PUSH 102
+S: GET index:4
+S: PUSH 106
+S: POP (106)
+S: POP (102)
+S: PUSH 208
+  | operation: (+,#op=2)
+S: GET index:7
+S: PUSH 97
+S: SWAP
+S: POP (208)
+S: POP (97)
+S: PUSH 177
+  | operation: (^,#op=2)
+S: POP (177)
+S: POP (1)
+S: PUSH 177
+  | operation: (*,#op=2)
+S: PUSH 4294961394
+S: POP (4294961394)
+S: POP (177)
+S: TEST (!=,#op=2)
+S: PUSH 0
+S: GET index:15
+S: PUSH 100
+S: GET index:28
+S: PUSH 108
+S: SWAP
+S: POP (100)
+S: POP (108)
+S: PUSH -8
+  | operation: (-,#op=2)
+S: PUSH 11
+S: POP (11)
+S: POP (4294967288)
+S: TEST (!=,#op=2)
+S: PUSH 0
+S: GET index:16
+S: PUSH 101
+S: GET index:13
+S: PUSH 99
+S: POP (99)
+S: POP (101)
+S: PUSH 200
+  | operation: (+,#op=2)
+S: GET index:21
+S: PUSH 105
+S: SWAP
+S: POP (200)
+S: POP (105)
+S: PUSH 161
+  | operation: (^,#op=2)
+S: PUSH 3
+S: POP (3)
+S: POP (161)
+S: TEST (!=,#op=2)
+S: PUSH 0
+S: GET index:1
+S: PUSH 112
+S: GET index:16
+S: PUSH 101
+S: SWAP
+S: POP (112)
+S: POP (101)
+S: PUSH 11
+  | operation: (-,#op=2)
+S: GET index:21
+S: PUSH 105
+S: POP (105)
+S: POP (11)
+S: PUSH 116
+  | operation: (+,#op=2)
+S: PUSH 176
+S: POP (176)
+S: POP (116)
+S: TEST (!=,#op=2)
+S: PUSH 0
+S: GET index:4
+S: PUSH 106
+S: GET index:18
+S: PUSH 107
+S: SWAP
+S: POP (106)
+S: POP (107)
+S: PUSH 1
+  | operation: (^,#op=2)
+S: GET index:17
+S: PUSH 115
+S: GET index:28
+S: PUSH 108
+S: POP (108)
+S: POP (115)
+S: PUSH 223
+  | operation: (+,#op=2)
+S: SWAP
+S: POP (1)
+S: POP (223)
+S: PUSH -222
+  | operation: (-,#op=2)
+S: GET index:27
+S: PUSH 103
+S: SWAP
+S: POP (4294967074)
+S: POP (103)
+S: PUSH 4294967109
+  | operation: (^,#op=2)
+S: PUSH 4294967097
+S: POP (4294967097)
+S: POP (4294967109)
+S: TEST (!=,#op=2)
+S: PUSH 0
+S: GET index:25
+S: PUSH 113
+S: GET index:13
+S: PUSH 99
+S: POP (99)
+S: POP (113)
+S: PUSH 11187
+  | operation: (*,#op=2)
+S: GET index:7
+S: PUSH 97
+S: GET index:30
+S: PUSH 114
+S: SWAP
+S: POP (97)
+S: POP (114)
+S: PUSH 19
+  | operation: (^,#op=2)
+S: GET index:8
+S: PUSH 98
+S: POP (98)
+S: POP (19)
+S: PUSH 1862
+  | operation: (*,#op=2)
+S: POP (1862)
+S: POP (11187)
+S: PUSH 13049
+  | operation: (+,#op=2)
+S: PUSH 9985
+S: POP (9985)
+S: POP (13049)
+S: TEST (!=,#op=2)
+S: PUSH 0
+S: GET index:29
+S: PUSH 110
+S: GET index:9
+S: PUSH 111
+S: POP (111)
+S: POP (110)
+S: PUSH 12210
+  | operation: (*,#op=2)
+S: GET index:22
+S: PUSH 104
+S: SWAP
+S: POP (12210)
+S: POP (104)
+S: PUSH 12106
+  | operation: (-,#op=2)
+S: PUSH 2083
+S: POP (2083)
+S: POP (12106)
+S: TEST (!=,#op=2)
+S: PUSH 0
+S: GET index:15
+S: PUSH 100
+S: GET index:23
+S: PUSH 109
+S: POP (109)
+S: POP (100)
+S: PUSH 209
+  | operation: (+,#op=2)
+S: GET index:26
+S: PUSH 102
+S: SWAP
+S: POP (209)
+S: POP (102)
+S: PUSH 107
+  | operation: (-,#op=2)
+S: PUSH 110
+S: POP (110)
+S: POP (107)
+S: TEST (!=,#op=2)
+S: PUSH 0
+S: GET index:29
+S: PUSH 110
+S: GET index:4
+S: PUSH 106
+S: POP (106)
+S: POP (110)
+S: PUSH 216
+  | operation: (+,#op=2)
+S: GET index:18
+S: PUSH 107
+S: GET index:21
+S: PUSH 105
+S: POP (105)
+S: POP (107)
+S: PUSH 11235
+  | operation: (*,#op=2)
+S: POP (11235)
+S: POP (216)
+S: PUSH 11451
+  | operation: (+,#op=2)
+S: PUSH 5630
+S: POP (5630)
+S: POP (11451)
+S: TEST (!=,#op=2)
+S: PUSH 0
+S: GET index:26
+S: PUSH 102
+S: GET index:25
+S: PUSH 113
+S: SWAP
+S: POP (102)
+S: POP (113)
+S: PUSH -11
+  | operation: (-,#op=2)
+S: GET index:7
+S: PUSH 97
+S: GET index:13
+S: PUSH 99
+S: POP (99)
+S: POP (97)
+S: PUSH 196
+  | operation: (+,#op=2)
+S: SWAP
+S: POP (4294967285)
+S: POP (196)
+S: PUSH 4294967089
+  | operation: (-,#op=2)
+S: PUSH 4294967114
+S: POP (4294967114)
+S: POP (4294967089)
+S: TEST (!=,#op=2)
+S: PUSH 0
+S: GET index:9
+S: PUSH 111
+S: GET index:22
+S: PUSH 104
+S: SWAP
+S: POP (111)
+S: POP (104)
+S: PUSH 7
+  | operation: (^,#op=2)
+S: GET index:30
+S: PUSH 114
+S: POP (114)
+S: POP (7)
+S: PUSH 798
+  | operation: (*,#op=2)
+S: PUSH 7200
+S: POP (7200)
+S: POP (798)
+S: TEST (!=,#op=2)
+S: PUSH 0
+S: GET index:28
+S: PUSH 108
+S: GET index:27
+S: PUSH 103
+S: POP (103)
+S: POP (108)
+S: PUSH 11124
+  | operation: (*,#op=2)
+S: GET index:15
+S: PUSH 100
+S: GET index:8
+S: PUSH 98
+S: POP (98)
+S: POP (100)
+S: PUSH 9800
+  | operation: (*,#op=2)
+S: POP (9800)
+S: POP (11124)
+S: PUSH 20924
+  | operation: (+,#op=2)
+S: PUSH 17872
+S: POP (17872)
+S: POP (20924)
+S: TEST (!=,#op=2)
+S: PUSH 0
+S: GET index:23
+S: PUSH 109
+S: GET index:1
+S: PUSH 112
+S: SWAP
+S: POP (109)
+S: POP (112)
+S: PUSH -3
+  | operation: (-,#op=2)
+S: GET index:16
+S: PUSH 101
+S: GET index:17
+S: PUSH 115
+S: POP (115)
+S: POP (101)
+S: PUSH 11615
+  | operation: (*,#op=2)
+S: SWAP
+S: POP (4294967293)
+S: POP (11615)
+S: PUSH 4294955678
+  | operation: (-,#op=2)
+S: PUSH 4294961888
+S: POP (4294961888)
+S: POP (4294955678)
+S: TEST (!=,#op=2)
+S: PUSH 0
+S: GET index:1
+S: PUSH 112
+S: GET index:15
+S: PUSH 100
+S: POP (100)
+S: POP (112)
+S: PUSH 11200
+  | operation: (*,#op=2)
+S: GET index:13
+S: PUSH 99
+S: GET index:28
+S: PUSH 108
+S: POP (108)
+S: POP (99)
+S: PUSH 10692
+  | operation: (*,#op=2)
+S: POP (10692)
+S: POP (11200)
+S: PUSH 21892
+  | operation: (+,#op=2)
+S: PUSH 18888
+S: POP (18888)
+S: POP (21892)
+S: TEST (!=,#op=2)
+S: PUSH 0
+S: GET index:29
+S: PUSH 110
+S: GET index:26
+S: PUSH 102
+S: POP (102)
+S: POP (110)
+S: PUSH 212
+  | operation: (+,#op=2)
+S: GET index:25
+S: PUSH 113
+S: POP (113)
+S: POP (212)
+S: PUSH 23956
+  | operation: (*,#op=2)
+S: PUSH 15049
+S: POP (15049)
+S: POP (23956)
+S: TEST (!=,#op=2)
+S: PUSH 0
+S: GET index:18
+S: PUSH 107
+S: GET index:7
+S: PUSH 97
+S: POP (97)
+S: POP (107)
+S: PUSH 204
+  | operation: (+,#op=2)
+S: GET index:30
+S: PUSH 114
+S: POP (114)
+S: POP (204)
+S: PUSH 23256
+  | operation: (*,#op=2)
+S: PUSH 12150
+S: POP (12150)
+S: POP (23256)
+S: TEST (!=,#op=2)
+S: PUSH 0
+S: GET index:9
+S: PUSH 111
+S: GET index:27
+S: PUSH 103
+S: SWAP
+S: POP (111)
+S: POP (103)
+S: PUSH 8
+  | operation: (^,#op=2)
+S: GET index:17
+S: PUSH 115
+S: POP (115)
+S: POP (8)
+S: PUSH 920
+  | operation: (*,#op=2)
+S: PUSH 10080
+S: POP (10080)
+S: POP (920)
+S: TEST (!=,#op=2)
+S: PUSH 0
+S: GET index:23
+S: PUSH 109
+S: GET index:22
+S: PUSH 104
+S: POP (104)
+S: POP (109)
+S: PUSH 213
+  | operation: (+,#op=2)
+S: GET index:16
+S: PUSH 101
+S: SWAP
+S: POP (213)
+S: POP (101)
+S: PUSH 112
+  | operation: (-,#op=2)
+S: PUSH 132
+S: POP (132)
+S: POP (112)
+S: TEST (!=,#op=2)
+S: PUSH 0
+S: GET index:4
+S: PUSH 106
+S: GET index:8
+S: PUSH 98
+S: POP (98)
+S: POP (106)
+S: PUSH 10388
+  | operation: (*,#op=2)
+S: GET index:21
+S: PUSH 105
+S: POP (105)
+S: POP (10388)
+S: PUSH 10493
+  | operation: (+,#op=2)
+S: PUSH 2453
+S: POP (2453)
+S: POP (10493)
+S: TEST (!=,#op=2)
+S: PUSH 0
+S: POP (0)
+S: TEST (!=,cte=1)
+S: PUSH 0
+S: POP (0)
+S: TEST (!=,cte=1)
+S: PUSH 0
+S: POP (0)
+S: TEST (!=,cte=1)
+S: PUSH 0
+S: POP (0)
+S: TEST (!=,cte=1)
+S: PUSH 0
+S: POP (0)
+S: TEST (!=,cte=1)
+S: PUSH 0
+S: POP (0)
+S: TEST (!=,cte=1)
+S: PUSH 0
+S: POP (0)
+S: TEST (!=,cte=1)
+S: PUSH 0
+S: POP (0)
+S: TEST (!=,cte=1)
+S: PUSH 0
+S: POP (0)
+S: TEST (!=,cte=1)
+S: PUSH 0
+S: POP (0)
+S: TEST (!=,cte=1)
+S: PUSH 0
+S: POP (0)
+S: TEST (!=,cte=1)
+S: PUSH 0
+S: POP (0)
+S: TEST (!=,cte=1)
+S: PUSH 0
+S: POP (0)
+S: TEST (!=,cte=1)
+S: PUSH 0
+S: POP (0)
+S: TEST (!=,cte=1)
+S: PUSH 0
+S: POP (0)
+S: TEST (!=,cte=1)
+S: PUSH 0
+S: POP (0)
+S: TEST (!=,cte=1)
+S: PUSH 0
+S: POP (0)
+S: TEST (!=,cte=1)
+S: PUSH 0
+S: POP (0)
+S: TEST (!=,cte=1)
+S: PUSH 0
+S: POP (0)
+S: TEST (!=,cte=1)
+S: PUSH 0
+S: POP (0)
+S: TEST (!=,cte=1)
+S: PUSH 0
+S: POP (0)
+S: TEST (!,#op=1)
+S: PUSH 32
