@@ -10,14 +10,14 @@ import com.pnfsoftware.jeb.core.units.code.asm.decompiler.ast.ICBreak;
 import com.pnfsoftware.jeb.core.units.code.asm.decompiler.ast.ICCompound;
 import com.pnfsoftware.jeb.core.units.code.asm.decompiler.ast.ICContinue;
 import com.pnfsoftware.jeb.core.units.code.asm.decompiler.ast.ICControlBreaker;
-import com.pnfsoftware.jeb.core.units.code.asm.decompiler.ast.ICForLoopStm;
+import com.pnfsoftware.jeb.core.units.code.asm.decompiler.ast.ICForStm;
 import com.pnfsoftware.jeb.core.units.code.asm.decompiler.ast.ICGoto;
 import com.pnfsoftware.jeb.core.units.code.asm.decompiler.ast.ICIfStm;
 import com.pnfsoftware.jeb.core.units.code.asm.decompiler.ast.ICJumpFar;
 import com.pnfsoftware.jeb.core.units.code.asm.decompiler.ast.ICMethod;
 import com.pnfsoftware.jeb.core.units.code.asm.decompiler.ast.ICReturn;
 import com.pnfsoftware.jeb.core.units.code.asm.decompiler.ast.ICStatement;
-import com.pnfsoftware.jeb.core.units.code.asm.decompiler.ast.ICWhileLoopStm;
+import com.pnfsoftware.jeb.core.units.code.asm.decompiler.ast.ICWhileStm;
 import com.pnfsoftware.jeb.util.format.Strings;
 
 /**
@@ -102,7 +102,7 @@ public class CFG {
             if(curStatement instanceof ICGoto) {
                 cfg.setFallThrough(curStatement, ((ICGoto)curStatement).getLabel());
             }
-            else if(curStatement instanceof ICWhileLoopStm || curStatement instanceof ICForLoopStm) {
+            else if(curStatement instanceof ICWhileStm || curStatement instanceof ICForStm) {
                 parentLoop_ = curStatement;
                 ICBlock loopBody = ((ICCompound)curStatement).getBlocks().get(0);
                 cfg.addConditionalTarget(curStatement, loopBody);
