@@ -2,7 +2,7 @@
 
 Plugin to emulate JEB's decompiled C code:
 
-- It was originally built to analyze an heavily obfuscated crackme executable dubbed MarsAnalytica (see companion blog [FIXME URL])
+- It was originally built to analyze an heavily obfuscated crackme executable dubbed MarsAnalytica (see [companion blog](https://www.pnfsoftware.com/blog/traveling-around-mars-with-c-emulation/))
 
 - Emulator has some strong limitations and should serve primarily as an example of what is doable with JEB decompiled C code (see SimpleCEmulator.java for known limitations)
 
@@ -26,6 +26,6 @@ Plugin to emulate JEB's decompiled C code:
 
 ## References 
 
-- [MA BLOG]
+- [Traveling Around Mars With C Emulation](https://www.pnfsoftware.com/blog/traveling-around-mars-with-c-emulation/) 
 
 - [API Documentation](https://www.pnfsoftware.com/jeb/apidoc/reference/packages.html)
